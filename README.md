@@ -8,7 +8,6 @@ Remember the workflow:
 2. Read the tests and errors.
 3. Write code; repeat steps 1 and 2 often until a test passes.
 4. Repeat as needed for further tests.
-5. Run `learn submit` when finished!
 
 ## Objectives
 1. Practice using `console.log()`
