@@ -1,7 +1,7 @@
 # JavaScript Logging Lab
 
 ## Problem Statment
-Another JavaScript lab! In this lab, we are practicing our use of `console.log` to debug in JavaScript.
+In this lab, we are practicing our use of `console.log` to debug in JavaScript.
 
 Remember the workflow:
 1. Run `learn`.
@@ -16,7 +16,7 @@ Remember the workflow:
 + `driver` - This test is already working for you. When you look inside the `it` function, you will see that the first test expects a variable named `driver` to have a value of `bob`. When you open up the `index.js` file, you will see that this already is declared in the first line.
 + `console.log()` - Let's take a look at the second `describe` function call inside of `test/indexTest.js`. Here, you can see that the tests inside of here are asking for a few things. Let's take them in turn.
   * If you look at the first `it` function call, the tests ask that `invokes console.log() with the string "this code was called"`. Then, the next line says `spy` to be `calledWithExactly` the string `this code was called`. To pass this test, we can write `console.log('this code was called')` inside of our `index.js` file. Yes, I know we are a little confused. What is a spy? It's ok if you walk away from the course not fully knowing. Just understand that this `spy` thing helps us test that `console.log` is called, and what the arguments are. So whenever you see `expect(spy.calledWithExactly('this code was called')).to.be.true` what we really mean is that we expect `console.log` to be called with the argument `this code was called`. For more details on what the `spy` is doing, see our "note about spies" below.
-  * In the second to last `it` function call in `test/indexTest.js` we test that `console.log` is called with our `driver` variable. This is a task you may find yourself doing a lot. Using `console.log` to see the value of a variable. If you pass the `variable` driver to `console.log` your test should be passing. More to the point, if you open up your browser's console (by pressing cmd+shift+c on a Mac, ctrl+shift+j on chrome on a PC), you can see your corresponding data logged.
+  * In the second to last `it` function call in `test/indexTest.js` we test that `console.log` is called with our `driver` variable. This is a task you may find yourself doing a lot. Using `console.log` to see the value of a variable. If you pass the `variable` driver to `console.log` your test should be passing. More to the point, if you open up your browser's console, you can see your corresponding data logged.
   * In the final `it` function call in this lab, the test asks you to practice passing multiple arguments to `console.log`. The first argument is the `driver` variable, and the second argument should be the string `is the driver variable name`.
 
 ## A note about spies
@@ -29,4 +29,3 @@ Why are we using spies all of a sudden? Open up the `test/indexTest.js` file and
 ## Resources
 - [console.log](https://developer.mozilla.org/en-US/docs/Web/API/Console/log)
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/js-basics-logging-lab'>Logging Lab</a> on Learn.co and start learning to code for free.</p>
